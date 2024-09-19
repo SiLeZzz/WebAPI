@@ -12,7 +12,7 @@ The pipeline is responsible for:
   -deploy the changes to Azure App Service
 
 2. Azure configuration
-
+   
    To make the API work properly on Azure we need:
      -Web App Service with .NET 8
      -Azure Database for PostgreSQL
