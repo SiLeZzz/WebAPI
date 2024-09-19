@@ -23,8 +23,9 @@ namespace WebAPI
             });
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+                options.UseNpgsql(builder.Configuration["ConStr"]);
             });
+            
             builder.Services.AddScoped<IContractRepository, ContractRepository>();
             builder.Services.AddScoped<ISettlementsRepository, SettlementRepository>();
 
