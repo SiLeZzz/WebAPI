@@ -4,7 +4,7 @@ INFORMATION ABOUT CI/CD AND AZURE CONFIGURATION
 
 Workflow is configured to run on merge or push to the master branch.
 
-The pipeline is responsible for: /n
+The pipeline is responsible for: 
   setup .NET version to 8.0.x
   restore nuget packages
   build the project in Release configuration
